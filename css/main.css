@@ -112,5 +112,36 @@ body h1{
     width: 100%;
 
     /* Other*/
-    border: 10px solid black; 
+    background-image: url('../images/plane.jpg');
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
+
+
+
+/*
+*
+*           THIRD FOLD
+*
+* 
+*
+*/
+#third_fold{
+    /* Flex as parent*/ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    /* Flex as child */ 
+    height: 100vh; 
+    width: 100%;
+
+        /* Other*/
+    background-image: url('../images/grassery.jpg');
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+    
