@@ -407,8 +407,7 @@ body h1 {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInSlow 4.5s ease-in-out forwards; 
-
-
+}
 
 @keyframes fadeInSlow {
     from {
