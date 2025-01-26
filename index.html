@@ -20,14 +20,16 @@
     
             <section id = "right_text">
 
-                <h1> hello, world.</h1>                  
-                <p> 
-                    Hi, I'm Sam, a Computer Science student        <br> 
-                    at Dawson College. I love to play              <br>
-                    badminton, meeting new people, and             <br> 
-                    making content online. (sometimes.)            <br> 
-                    Scroll down to see some of my work :)          <br>
-                </p> 
+                <h1> hello, world.</h1>
+                
+                <section class ="blur-background">
+                    <p> 
+                        Hi, I'm Sam.            <br> 
+
+                        I'm currently pursuing CS at Dawson! I love to play badminton, meeting
+                        new people, and making content online. (...sometimes!). 
+                    </p> 
+                </section>
 
             </section>
     
@@ -39,18 +41,65 @@
     </section>
 
     <section id="below_fold">
-        this is where i'll put some of my projects :)
-
+        <div class="project-item">
+            <h2 class="project-title">Chess Reads</h2>
+            <div class="tech-stack">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 1">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 2">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 3">
+            </div>
+            <div class="rectangle"></div>
+            <p class="project-description">Description of project 1. </p>
+        </div>
+        
+        <div class="project-item">
+            <h2 class="project-title">Mario's Recipes!</h2>
+            <div class="tech-stack">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 1">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 2">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 3">
+            </div>
+            <div class="rectangle"></div>
+            <p class="project-description">Description of project. </p>
+        </div>
+        
+        <div class="project-item">
+            <h2 class="project-title"> BixiMTL </h2>
+            <div class="tech-stack">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 1">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 2">
+                <img src="./images/profile.jpg" class="circular-image" alt="Tech 3">
+            </div>
+            <div class="rectangle"></div>
+            <p class="project-description">Description of project. </p>
+        </div>
     </section>
+    
 
+    
 
-
-    <section id="third_fold">
+    
+    <section id="third_fold" class="fade-in">
         here's a few ways to get in touch with me :)
-
-
     </section>
+    
 
+    <script>
+        // Intersection Observer for scroll animation
+        const items = document.querySelectorAll('.random-item');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        items.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
 
 
 </body>
