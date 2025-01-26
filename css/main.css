@@ -7,6 +7,7 @@ body{
     align-items: center;
     margin: 0em;
 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* padding-left: 9em;
     padding-right: 9em; */
 }
@@ -35,7 +36,7 @@ body h1{
 
 #foldwrapper{
     display: flex;
-
+    flex: 10;
     margin-right: 2em;
     margin-left: 2em;
 
@@ -44,7 +45,7 @@ body h1{
 #above_fold {
     /* Flex as parent*/ 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -60,10 +61,29 @@ body h1{
 }
 
 
+#above_fold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for darkness */
+    z-index: 1;
+}
+
+/* Ensure content appears above the overlay */
+#above_fold > * {
+    position: relative;
+    z-index: 2;
+}
+
+
 #left_image{
     /* Flex as parent */
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 
     /* Flex as child */ 
@@ -91,21 +111,21 @@ body h1{
     position: relative;
     padding-right: 1em;
     padding-left: 0;
-    width: 80%; /* Adjust the width */
+    width: 80%; 
 }
 
 #right_text p {
-    margin: 0; /* Remove extra spacing around the text */
-    color: white; /* Ensure good contrast */
-    font-size: 1.2em; /* Adjust font size as needed */
-    line-height: 1.5; /* Add line spacing for readability */
+    margin: 0; 
+    color: white; 
+    font-size: 1.2em; 
+    line-height: 1.5; 
 }
 
 
 .circular_image{
-    width: 50%;
+    width: 80%;
     border-radius:50%; 
-    margin-right: 5rem;
+    margin-right: 2rem;
 }
 
 
@@ -120,7 +140,7 @@ body h1{
 #below_fold{
     /* Flex as parent*/ 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -136,14 +156,13 @@ body h1{
 }
 
 
+#projects{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-#below_fold {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    position: relative;
 }
-
 .rectangle {
     width: 100%;
     height: 150px;
@@ -159,6 +178,12 @@ body h1{
     color: #333;
 }
 
+.rectangle img{
+
+    flex: 1; 
+    width: 100%;
+    height: 100%;
+}
 .text {
     margin-top: 1rem;
     font-family: Arial, sans-serif;
@@ -166,25 +191,10 @@ body h1{
     color: #555;
 }
 
-.random-item {
-    position: relative;
-}
 
-/* Adding random positioning */
-.random-item:nth-child(1) {
-    grid-column: 1;
-    grid-row: 2;
-}
 
-.random-item:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
-}
 
-.random-item:nth-child(3) {
-    grid-column: 3;
-    grid-row: 3;
-}
+
 
 #below_fold {
     display: grid;
@@ -193,30 +203,18 @@ body h1{
     position: relative;
 }
 
-.random-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    border-radius: 15px;
-    background: #f0f0f0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
 
-.random-item.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+
 
 .rectangle {
-    width: 20%;
-    height: 80px;
-    background-color: #87ceeb;
-    border-radius: 10px;
+    width: 90%; /* Adjust to fit within the project item */
+    max-width: 300px; /* Prevent it from becoming too large */
+    height: 10px; /* Keep the original height */
+    border-radius: 10px; /* Smooth corners */
+    background-color: #87ceeb; /* Blue color */
+    margin: 0 auto; /* Center the rectangle within its container */
 }
+
 
 .random-text {
     font-size: 0.9rem;
@@ -242,27 +240,83 @@ body h1{
 * 
 *
 */
-#third_fold{
-    /* Flex as parent*/ 
+#third_fold {
+    /* Flex as parent */ 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     /* Flex as child */ 
     height: 100vh; 
     width: 100%;
 
-        /* Other*/
+    /* Background Image */
     background-image: url('../images/grassery.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+
+    /* Positioning for overlay */
+    position: relative;
+    overflow: hidden;
+}
+
+#third_fold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for darkness */
+    z-index: 1;
+}
+
+/* Ensure content inside #third_fold appears above the overlay */
+#third_fold > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+#above_fold {
+    /* Flex as parent*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Flex as child */ 
+    height: 100vh; 
+    width: 100%;
+
+    /* Other*/
+    background-image: url('../images/demons.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
 }
-    
 
 
+#above_fold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for darkness */
+    z-index: 1;
+}
 
+/* Ensure content appears above the overlay */
+#above_fold > * {
+    position: relative;
+    z-index: 2;
+}
 
 
 
@@ -299,7 +353,7 @@ body h1 {
 
 #above_fold {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh; 
@@ -312,7 +366,7 @@ body h1 {
 #below_fold {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the project items horizontally */
+    justify-content: center; 
     gap: 2rem;
     position: relative;
 }
@@ -321,25 +375,66 @@ body h1 {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 1rem; /* Add some space between the images and the description */
+    margin-bottom: 1rem; 
 }
 
 .project-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the items inside each project */
+    align-items: center; 
     background: #f0f0f0;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     width: 80%;
-    max-width: 350px;
-    height: 350px;
+    width: 20em;
+    height: 30em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#spotify{
+    display: flex;
+    justify-content: flex-end;
+    flex:4; 
+    width: 100%;
+}
+
+#spotify p {
+    font-size: 1em;
+    flex: 1;
+    text-align: center;
+    margin-right: 2em;
+
+    /* Initial state for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlow 4.5s ease-in-out forwards; /* Apply animation */
 }
 
 
+/* Define the fade-in animation */
+@keyframes fadeInSlow {
+    from {
+        opacity: 0;
+        transform: translateY(1px); /* Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Reset to original position */
+    }
+}
+#spotify iframe{
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+
+
+
+
 .project-title {
-    font-size: 1.2rem; /* Slightly smaller title */
+    font-size: 1.2rem; 
     font-weight: bold;
     color: #333;
     margin-bottom: 1rem;
@@ -354,22 +449,22 @@ body h1 {
 
 .rectangle {
     width: 100%;
-    height: 12em; /* Reduced height for the rectangle */
+    height: 12em; 
     background-color: #87ceeb;
     border-radius: 10px;
-    margin-bottom: 1rem; /* Space between rectangle and description */
+    margin-bottom: 1rem; 
 }
 
 
 .project-description {
-    font-size: 0.9rem; /* Slightly smaller font size */
+    font-size: 0.9rem; 
     color: #555;
     line-height: 1.4;
     text-align: center;
     margin-top: 1rem;
 }
 
-/* Animation trigger */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -380,3 +475,64 @@ body h1 {
         transform: translateY(0);
     }
 }
+
+
+#below_fold {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+
+    overflow-y: auto;
+
+    background-image: url('../images/plane.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* Video logic */
+
+
+.video-container {
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+
+
+
+
+  #third_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 250;
+    margin-bottom: 3em;
+  }
+
+  .contact-logos{
+    display: flex;
+    flex-direction: row;
+    flex: 105;
+  }
+
+  .logoend{
+    width: 7em;
+    height: 7em;
+    margin: 0em 2em 0em 2em;
+  }
