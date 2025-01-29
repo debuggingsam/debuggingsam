@@ -385,7 +385,7 @@ body h1 {
     padding: 1rem;
     width: 80%;
     width: 20em;
-    height: 30em;
+    height: 32em;
     margin-left: 2em;
     margin-right: 2em;
 }
@@ -530,4 +530,9 @@ body h1 {
     width: 7em;
     height: 7em;
     margin: 0em 1em 0em 1em;
+  }
+
+
+  .project-link{
+    text-decoration: none;
   }
