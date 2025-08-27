@@ -11,12 +11,25 @@
 
     <section id="above_fold"> 
     
-        <section id="spotify">
+        <!-- <section id="spotify">
             <section id ="updown">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0nsIevK1SeDfZzDOi6Si75?utm_source=generator" width="300" height="88" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                <p> my song of the week :)  </p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1GIDMzcU9cvO5j7f1kuT4Z?utm_source=generator" width="300" height="88" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <p> random song i like enough to put here  </p>
             </section>
-        </section>
+        </section> -->
+
+        <section id="spotify">
+            <section id="updown">
+              <iframe id="spotify-embed" 
+                style="border-radius:12px" 
+                src="" 
+                width="300" height="88" frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+              <p> probably jamming out to this right now </p>
+            </section>
+          </section>
 
 
         <section id = "foldwrapper" >
@@ -28,15 +41,15 @@
     
             <section id = "right_text">
 
-                <h1> hello, world.</h1>
+                <h1> hello, world</h1>
                 
                 <section class ="blur-background">
                     <p> 
-                        Hi, I'm Samin Ahmed.            <br> <br>
+                        Hi, I'm Samin Ahmed.         <br> <br>
 
-                        I'm currently a CS Student at McGill <br>
+                        I'm a CS Student at McGill <br>
                         with industry experience working <br>
-                        as a Java developer intern. 
+                        as a Java developer intern at TS Imagine. 
 
                         <br> <br> 
 
@@ -61,34 +74,35 @@
 
     <section id="below_fold">
 
-        <h1> my work! </h1>
+        <h1> work & projects :) </h1>
 
         <div id = "projects">
 
             <div class="project-item">
-                <h2 class="project-title"> Java Developer Intern </h2>
+                <h2 class="project-title"> Java Intern @ TSI </h2>
                 <div class="tech-stack">
                     <img src="./images/spring.png" class="circular-image" alt="Spring logo">
                     <img src="./images/java.png" class="circular-image" alt="Java Logo">
-                    <img src="./images/react.png" class="circular-image" alt="Java Logo">
-                    <img src="./images/js.png" class="circular-image" alt="js">
+                    <img src="./images/react.png" class="circular-image" alt="React Logo">
+                    <img src="./images/sql.png" class="circular-image" alt="SQL Logo">
+                    <img src="./images/Selenium_Logo.png" class="circular-image" alt="Selenium Logo">
 
-                    <img src="./images/sqlite.webp" class="circular-image" alt="SQLite Logo">
                 </div>
                 <div class="rectangle">
-                    <img src="./images/TS-Imagine-Logo-Blue-Social.jpg" alt ="books"/>
+                    <img src="./images/tsifrontpage.png" alt ="tsi"/>
                 </div>
                 <p class="project-description"> 
-                    Ongoing internship at TS Imagine, I'll update this when I'm done ^_^ 
-                    <br> <br> <br> <br> 
+                    As an intern at TSI Montreal, my work focused mostly on the Support Portal service used primarily by Account Managers at the company to onboard new clients.
+                    During my 5 months here, I pushed over 20 new features and 15 bugfixes to production. This included both the Front-end 
+                    user facing UI components (with React!) and all the backend logic (handled by SpringBoot!). My work also included extensive E2E testing of all features and
+                    bugfixes I worked on using Selenium, Playright, and Cucumber. 
                  </p>
             </div>
 
             <a href="https://strats.gg" target="_blank" class="project-link">
                 <div class="project-item">
-                    <h2 class="project-title"> Strats.gg Intern </h2>
+                    <h2 class="project-title"> Front-end Intern @ Strats.gg  </h2>
                     <div class="tech-stack">
-                        <img src="./images/angular.png" class="circular-image" alt="Angular logo">
                         <img src="./images/js.png" class="circular-image" alt="js">
                         <img src="./images/html.png" class="circular-image" alt="HTML">
                         <img src="./images/css.png" class="circular-image" alt="CSS">
@@ -105,6 +119,25 @@
                     </p>
                 </div>
             </a>
+
+            
+            <div class="project-item">
+                <h2 class="project-title"> Speedoku! </h2>
+                <div class="tech-stack">
+                    <img src="./images/websocket.png" class="circular-image" alt="Websocket">
+                    <img src="./images/node.avif" class="circular-image" alt="NodeJS Logo">
+                    <img src="./images/js.png" class="circular-image" alt="JS Logo">
+                    <img src="./images/mongo.png" class="circular-image" alt="MongoDB Logo">
+                    <img src="./images/google-cloud.png" class="circular-image" alt="GCP Logo">
+                </div>
+                <div class="rectangle">
+                    <img src="./images/invalid_entry.png" alt ="Speedoku Dashboard"/>
+                </div>
+                <p class="project-description"> 
+                    Speedoku is a live websocket-based 1v1 sudoku game where you and your friends can throw silly abilities at each other and race against a clock
+                    to solve a sudoku board first. Watch our (really silly and stupid) trailer <a href="https://www.youtube.com/watch?v=b4mirPxraBc"> here </a> ! :) 
+                 </p>
+            </div>
             
             
 
@@ -189,7 +222,7 @@
                         Login, customize your profile and explore over 2,000,000 unique recipes with Mario's Recipe Manager! 
                         
                         
-                        <br> <br> <br> PS. Any resemblances to characters subject to copyright laws are merely coincidental.
+                        <br> <br> <br> PS. Resemblances to copyright works are MERELY coincidental. 
 
                         <br> <br> 
 
@@ -236,4 +269,29 @@
     
       
 </body>
+
+<script>
+    (function () {
+      // Put your favorite Spotify track IDs here
+      const tracks = [
+        "26ZX2JrAb8AFbr8FFfAsO7", // Sex - Eden 
+        "32NRHTXx7dWCBHaKtinsZ6", // Bones and All 
+        "2FWtCf6ZlSQ9Q6kSiMb3hq", // Tiramisu 
+        "2GjDvj6jvA21pNRN9GfGah", // Forever - Rei 
+        "3DUe5irMKEjbsIoHxHnIYe", // Tell em you're mine 
+        "1GIDMzcU9cvO5j7f1kuT4Z", // your default
+        "3FYuQY0fkDsOOIpcvgBLIo", // lost & found - umi 
+        "1w9B61OdLdnjzZIUYmy0bd", // davy crochet
+        "45ybqd2Egw9NyJeCRYjMx4", // weston estate
+        "0nsIevK1SeDfZzDOi6Si75", // crush
+        "3BOBiTt7jIn9WLoxV3tLUv", // atlas in motion 
+        "7bqi6xDv1KrmM8cKN5Qo4x", // beep
+      ];
+
+        const randomTrack = tracks[Math.floor(Math.random() * tracks.length)];
+        const iframe = document.getElementById("spotify-embed");
+      const base = "https://open.spotify.com/embed/track/";
+      iframe.src = base + encodeURIComponent(randomTrack) + "?utm_source=generator";
+    })();
+  </script>
 </html>
