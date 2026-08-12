@@ -1,312 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/mainv1.css"> 
-    <title>Hi, I'm Sam :) </title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sam Ahmed — computer science student, developer, and builder of fun things.">
+  <link rel="stylesheet" href="./css/mainv1.css">
+  <title> hello, world</title>
 </head>
 <body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Sam Ahmed, home">debuggingsam<span>_</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">projects</a>
+      <a href="#contact">say hi</a>
+    </nav>
+  </header>
 
-    <section id="above_fold"> 
-    
-        <!-- <section id="spotify">
-            <section id ="updown">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1GIDMzcU9cvO5j7f1kuT4Z?utm_source=generator" width="300" height="88" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                <p> random song i like enough to put here  </p>
-            </section>
-        </section> -->
-
-        <section id="spotify">
-            <section id="updown">
-              <iframe id="spotify-embed" 
-                style="border-radius:12px" 
-                src="" 
-                width="300" height="88" frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-              </iframe>
-              <p> probably jamming out to this right now </p>
-            </section>
-          </section>
-
-
-        <section id = "foldwrapper" >
-
-            <section id="left_image"> 
-                <img src = "./images/profile.jpg" class="circular_image">
-            </section>
-    
-    
-            <section id = "right_text">
-
-                <h1> hello, world</h1>
-                
-                <section class ="blur-background">
-                    <p> 
-                        Hi, I'm Sam! <br> <br>
-
-                        I'm currently a CS student at McGill <br>
-                        and a SDE intern at FlexSpring! <br> 
-                        Previously, I worked at TS Imagine <br>
-                        as a Java backend developer. 
-
-                        <br> <br> 
-
-                        I like to play badminton, <br>
-                        listening to music (see above!), 
-                        <br> and meeting new people :) 
-                        <br> 
-                        <br> 
-
-                        PS. Oui, je parle Français aussi. :^)
-                    </p> 
-                </section>
-
-            </section>
-    
-        </section>
-
-
-
-
-    </section>
-
-    <section id="below_fold">
-
-        <h1> work & projects :) </h1>
-
-        <div id = "projects">
-
-            <div class="project-item">
-                <h2 class="project-title"> SDE Intern @ Flexspring </h2>
-                <div class="tech-stack">
-                    <img src="./images/spring.png" class="circular-image" alt="Spring logo">
-                    <img src="./images/java.png" class="circular-image" alt="Java Logo">
-                    <img src="./images/react.png" class="circular-image" alt="React Logo">
-                    <img src="./images/mongo.png" class="circular-image" alt="MongoDB Logo">
-                </div>
-                <div class="rectangle">
-                    <img src="./images/flexp.png" alt ="flexspring"/>
-                </div>
-                <p class="project-description"> 
-                        I'm here here right now... So ask me again in a couple months :] 
-                 </p>
-            </div>
-
-            <div class="project-item">
-                <h2 class="project-title"> Java Intern @ TSI </h2>
-                <div class="tech-stack">
-                    <img src="./images/spring.png" class="circular-image" alt="Spring logo">
-                    <img src="./images/java.png" class="circular-image" alt="Java Logo">
-                    <img src="./images/react.png" class="circular-image" alt="React Logo">
-                    <img src="./images/sql.png" class="circular-image" alt="SQL Logo">
-                    <img src="./images/Selenium_Logo.png" class="circular-image" alt="Selenium Logo">
-
-                </div>
-                <div class="rectangle">
-                    <img src="./images/tsifrontpage.png" alt ="tsi"/>
-                </div>
-                <p class="project-description"> 
-                    Added 20+ features and fixed 30+ bugs on the Global Onboarding app.
-                    Also worked on E2E testing with Selenium, Playright, and Cucumber. 
-                 </p>
-            </div>
-
-            <a href="https://strats.gg" target="_blank" class="project-link">
-                <div class="project-item">
-                    <h2 class="project-title"> Front-end Intern @ Strats.gg  </h2>
-                    <div class="tech-stack">
-                        <img src="./images/js.png" class="circular-image" alt="js">
-                        <img src="./images/html.png" class="circular-image" alt="HTML">
-                        <img src="./images/css.png" class="circular-image" alt="CSS">
-                    </div>
-                    <div class="rectangle video-container">
-                        <video autoplay muted loop>
-                            <source src="./videos/stratsgg.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <p class="project-description"> 
-                        Front-end development intern at StratsGG, a companion app for
-                        Riot Games' VALORANT!!!
-                    </p>
-                </div>
-            </a>
-
-            
-            <div class="project-item">
-                <h2 class="project-title"> Speedoku! </h2>
-                <div class="tech-stack">
-                    <img src="./images/websocket.png" class="circular-image" alt="Websocket">
-                    <img src="./images/node.avif" class="circular-image" alt="NodeJS Logo">
-                    <img src="./images/js.png" class="circular-image" alt="JS Logo">
-                    <img src="./images/mongo.png" class="circular-image" alt="MongoDB Logo">
-                    <img src="./images/google-cloud.png" class="circular-image" alt="GCP Logo">
-                </div>
-                <div class="rectangle">
-                    <img src="./images/invalid_entry.png" alt ="Speedoku Dashboard"/>
-                </div>
-                <p class="project-description"> 
-                    Speedoku is a live websocket-based 1v1 sudoku game where you and your friends can throw silly abilities at each other and race against a clock
-                    to solve a sudoku board first. Watch our (really silly and stupid) trailer <a href="https://www.youtube.com/watch?v=b4mirPxraBc"> here </a> ! :) 
-                 </p>
-            </div>
-            
-            
-
-            <div class="project-item">
-                <h2 class="project-title"> Bicyclette MTL </h2>
-                <div class="tech-stack">
-                    <img src="./images/react.png" class="circular-image" alt="React logo">
-                    <img src="./images/express.png" class="circular-image" alt="Express Logo">
-                    <img src="./images/node.avif" class="circular-image" alt="Node">
-                    <img src="./images/mongo.png" class="circular-image" alt="MongoDB">
-                    <img src="./images/mocha.svg.png" class="circular-image" alt="Mocha">
-                </div>
-                <div class="rectangle video-container">
-                    <video autoplay muted loop>
-                        <source src="./videos/bixivid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video>
-                </div>
-                <p class="project-description"> 
-                    Bicyclette MTL is a web app that showcases Montreal's rise as a biking hub.
-                    You can watch Bixi stations pop up over the years on our maps and 
-                    learn a few fun facts about the city along the way.
-                    <br> <br> Maybe even plan 
-                    your next biking trip with our awesome interactive map?!
-                </p>
-                
-            </div>
-
-
-
-            <div class="project-item">
-                <h2 class="project-title">Chess Reads</h2>
-                <div class="tech-stack">
-                    <img src="./images/android.png" class="circular-image" alt="Android">
-                    <img src="./images/kotlin.png" class="circular-image" alt="Kotlin Logo">
-                    <img src="./images/java.png" class="circular-image" alt="Java Logo">
-                    <img src="./images/sqlite.webp" class="circular-image" alt="SQLite Logo">
-                </div>
-                <div class="rectangle">
-                    <img src = "./images/books.png" alt ="books"/>
-                </div>
-                <p class="project-description"> 
-                    The Chess Reads app allows you to download, read and locally save your favorite 
-                    chess books so you can become a grandmaster from the comfort of your home. Leave 
-                    your Kindle in the dust.
-                    <br> <br> <br> <br> What are you waiting for? Make your move. 
-                 </p>
-            </div>
-
-                <div class="project-item">
-                    <h2 class="project-title">Appoint It! </h2>
-                    <div class="tech-stack">
-                        <img src="./images/python.png" class="circular-image" alt="C# Logo">
-                        <img src="./images/flask.png" class="circular-image" alt="Flask logo">
-                        <img src="./images/sql.png" class="circular-image" alt="SQL">
-                        <!-- <img src="./images/efcore.png" class="circular-image" alt="EFCore Logo"> -->
-                    </div>
-                    <div class="rectangle">
-                        <img src = "images/appoint.png" alt = "appoint it" /> 
-                    </div>
-                    <p class="project-description">
-                         Appoint It is an appointment scheduling app for teachers, students, and administrators that features a 
-                         sleek UI, a secure login system that we built from scratch, API endpoints using Flask, and everything
-                         you could want from an appointment scheduling app. 
-                    </p>
-                </div>
-
-
-
-                <div class="project-item">
-                    <h2 class="project-title">Mario's Recipe Manager!</h2>
-                    <div class="tech-stack">
-                        <img src="./images/csharp.png" class="circular-image" alt="C# Logo">
-                        <img src="./images/sql.png" class="circular-image" alt="SQL logo">
-                        <img src="./images/mstest.webp" class="circular-image" alt="MSTest">
-                        <!-- <img src="./images/efcore.png" class="circular-image" alt="EFCore Logo"> -->
-                    </div>
-                    <div class="rectangle">
-                        <img src = "./images/mario.png" alt = "mama mia"/>
-                     </div>
-                    <p class="project-description"> 
-                        Login, customize your profile and explore over 2,000,000 unique recipes with Mario's Recipe Manager! 
-                        
-                        
-                        <br> <br> <br> PS. Resemblances to copyright works are MERELY coincidental. 
-
-                        <br> <br> 
-
-                </div>
-            
+  <main>
+    <section id="home" class="hero">
+      <span class="hero-squiggle" aria-hidden="true"></span>
+      <div class="hero-copy">
+        <p class="eyebrow"> montreal, qc</p>
+        <h1>hello,<br><em>world</em><span></span></h1>
+        <p class="intro">Hi, I'm Sam!<br><br>I'm currently a CS student at McGill<br>and a SDE intern at FlexSpring!<br>Previously, I worked at TS Imagine<br>as a Java backend developer.<br><br> PS. Oui, je parle Français aussi. :^)</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">see what I've made <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="#contact">let's talk <span aria-hidden="true">↗</span></a>
         </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="orbit orbit-a" aria-hidden="true"></div>
+        <div class="orbit orbit-b" aria-hidden="true"></div>
+        <div class="polaroid">
+          <img src="./images/profile.jpg" alt="Sam Ahmed smiling outdoors">
+          <p> my favorite beagle </p>
+        </div>
+      </div>
+      <aside class="now-playing" aria-label="A song Sam is probably listening to right now">
+        <iframe id="spotify-embed" title="A randomly selected favourite song" src="" width="300" height="88" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <p>probably jamming out to this rn</p>
+      </aside>
     </section>
-    
 
-    
+    <section id="projects" class="projects-section">
+      <div class="section-heading">
+        <p class="eyebrow"></p>
+        <h2>work &amp; projects<span></span></h2>
+        <p> my silly projects and my (not so silly) work experience </p>
+      </div>
 
-    
-    <section id="third_fold" class="fade-in">
+      <div class="projects-grid">
+        <article class="project-card card-coral">
+          <div class="card-top"><p class="project-number">01 / work</p><span aria-hidden="true"></span></div>
+          <h3>SDE Intern<br>@ FlexSpring</h3>
+          <div class="tech-stack"><img src="./images/spring.png" alt="Spring"><img src="./images/java.png" alt="Java"><img src="./images/react.png" alt="React"><img src="./images/mongo.png" alt="MongoDB"></div>
+          <div class="project-visual"><img src="./images/flexp.png" alt="FlexSpring website preview"></div>
+          <p>Currently learning the ropes and contributing to the team. Ask me again in a couple months :] </p>
+        </article>
 
-        <section id = "grouping"> 
-            <section id="third_text">
-                <p> get in touch with me! :)</p>
-            </section>
-    
-            <div class="contact-logos">
-                <a href="https://www.linkedin.com/in/samin-ahmed-713371327/" target="_blank" aria-label="LinkedIn">
-                    <img src="./images/linkedin.png" alt="LinkedIn Logo" class="circular-image logoend">
-                </a>
+        <article class="project-card card-blue">
+          <div class="card-top"><p class="project-number">02 / work</p><span aria-hidden="true"></span></div>
+          <h3>Java Intern<br>@ TSI</h3>
+          <div class="tech-stack"><img src="./images/spring.png" alt="Spring"><img src="./images/java.png" alt="Java"><img src="./images/react.png" alt="React"><img src="./images/sql.png" alt="SQL"><img src="./images/Selenium_Logo.png" alt="Selenium"></div>
+          <div class="project-visual"><img src="./images/tsifrontpage.png" alt="TSI Global Onboarding preview"></div>
+          <p>Added 20+ features and fixed 30+ bugs on Global Onboarding, plus end-to-end tests with Selenium, Playwright, and Cucumber.</p>
+        </article>
 
-                <a href="https://gitlab.com/sama673" target="_blank" aria-label="GitLab">
-                    <img src="./images/gitlab.png" alt="GitLab" class="circular-image logoend">
-                </a>
+        <a href="https://strats.gg" target="_blank" rel="noreferrer" class="project-link" aria-label="Visit Strats.gg">
+          <article class="project-card card-violet">
+            <div class="card-top"><p class="project-number">03 / work</p><span aria-hidden="true"></span></div>
+            <h3>Front-end Intern<br>@ Strats.gg</h3>
+            <div class="tech-stack"><img src="./images/js.png" alt="JavaScript"><img src="./images/html.png" alt="HTML"><img src="./images/css.png" alt="CSS"></div>
+            <div class="project-visual video-container"><video autoplay muted loop playsinline><source src="./videos/stratsgg.mp4" type="video/mp4"></video></div>
+            <p>Front-end work for a companion app made for Riot Games' VALORANT. Click to take a look!</p>
+          </article>
+        </a>
 
-    
-                <a href="https://github.com/debuggingsam" target="_blank" aria-label="GitHub">
-                    <img src="./images/github.webp" alt="YouTube Logo" class="circular-image logoend">
-                </a>
+        <article class="project-card card-lime">
+          <div class="card-top"><p class="project-number">04 / game</p><span aria-hidden="true"></span></div>
+          <h3>Speedoku!</h3>
+          <div class="tech-stack"><img src="./images/websocket.png" alt="WebSocket"><img src="./images/node.avif" alt="Node.js"><img src="./images/js.png" alt="JavaScript"><img src="./images/mongo.png" alt="MongoDB"><img src="./images/google-cloud.png" alt="Google Cloud"></div>
+          <div class="project-visual"><img src="./images/invalid_entry.png" alt="Speedoku game dashboard"></div>
+          <p>A live 1v1 Sudoku game where friends race the clock and throw ridiculous abilities at each other. <a href="https://www.youtube.com/watch?v=b4mirPxraBc" target="_blank" rel="noreferrer">Watch the silly trailer ↗</a></p>
+        </article>
 
-                <a href="https://www.youtube.com/@debuggingsam" target="_blank" aria-label="YouTube">
-                    <img src="./images/youtube.png" alt="YouTube Logo" class="circular-image logoend">
-                </a>
+        <article class="project-card card-orange">
+          <div class="card-top"><p class="project-number">05 / map</p><span aria-hidden="true"></span></div>
+          <h3>Bicyclette<br>MTL</h3>
+          <div class="tech-stack"><img src="./images/react.png" alt="React"><img src="./images/express.png" alt="Express"><img src="./images/node.avif" alt="Node.js"><img src="./images/mongo.png" alt="MongoDB"><img src="./images/mocha.svg.png" alt="Mocha"></div>
+          <div class="project-visual video-container"><video autoplay muted loop playsinline><source src="./videos/bixivid.mp4" type="video/mp4"></video></div>
+          <p>An interactive view of Montreal’s rise as a bike hub... See Bixi stations pop up across the map through the years.</p>
+        </article>
 
+        <article class="project-card card-pink">
+          <div class="card-top"><p class="project-number">06 / mobile</p><span aria-hidden="true"></span></div>
+          <h3>Chess Reads</h3>
+          <div class="tech-stack"><img src="./images/android.png" alt="Android"><img src="./images/kotlin.png" alt="Kotlin"><img src="./images/java.png" alt="Java"><img src="./images/sqlite.webp" alt="SQLite"></div>
+          <div class="project-visual"><img src="./images/books.png" alt="Chess Reads book library"></div>
+          <p>Download, read, and save your favourite chess books locally. GM in no time... (real) </p>
+        </article>
 
-            </div>
+        <article class="project-card card-mint">
+          <div class="card-top"><p class="project-number">07 / web</p><span aria-hidden="true"></span></div>
+          <h3>Appoint It!</h3>
+          <div class="tech-stack"><img src="./images/python.png" alt="Python"><img src="./images/flask.png" alt="Flask"><img src="./images/sql.png" alt="SQL"></div>
+          <div class="project-visual"><img src="./images/appoint.png" alt="Appoint It application preview"></div>
+          <p>Scheduling for teachers, students, and administrators.</p>
+        </article>
 
-        </section>
-
+        <article class="project-card card-sun">
+          <div class="card-top"><p class="project-number">08 / PC </p><span aria-hidden="true"></span></div>
+          <h3>Mario's Recipe<br>Manager!</h3>
+          <div class="tech-stack"><img src="./images/csharp.png" alt="C Sharp"><img src="./images/sql.png" alt="SQL"><img src="./images/mstest.webp" alt="MSTest"></div>
+          <div class="project-visual"><img src="./images/mario.png" alt="Mario's Recipe Manager preview"></div>
+          <p>Explore 2,000,000+ recipes and make them your own. Resemblances to copyrighted works are merely coincidental.</p>
+        </article>
+      </div>
     </section>
-    
-      
-</body>
+  </main>
 
-<script>
+  <footer id="contact" class="contact-section">
+    <p class="eyebrow"></p>
+    <h2> hmu! </h2>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/samin-ahmed-713371327/" target="_blank" rel="noreferrer">linkedin <span>↗</span></a>
+      <a href="https://github.com/debuggingsam" target="_blank" rel="noreferrer">github <span>↗</span></a>
+      <a href="https://gitlab.com/sama673" target="_blank" rel="noreferrer">gitlab <span>↗</span></a>
+      <a href="https://www.youtube.com/@debuggingsam" target="_blank" rel="noreferrer">youtube <span>↗</span></a>
+    </div>
+    <p class="footer-signoff"> "What a blessing to be tired in a pursuit of a challenge of your own choosing"</p>
+  </footer>
+
+  <script>
     (function () {
-      // Put your favorite Spotify track IDs here
-      const tracks = [
-        "26ZX2JrAb8AFbr8FFfAsO7", // Sex - Eden 
-        "32NRHTXx7dWCBHaKtinsZ6", // Bones and All 
-        "2FWtCf6ZlSQ9Q6kSiMb3hq", // Tiramisu 
-        "2GjDvj6jvA21pNRN9GfGah", // Forever - Rei 
-        "3DUe5irMKEjbsIoHxHnIYe", // Tell em you're mine 
-        "1GIDMzcU9cvO5j7f1kuT4Z", // your default
-        "3FYuQY0fkDsOOIpcvgBLIo", // lost & found - umi 
-        "1w9B61OdLdnjzZIUYmy0bd", // davy crochet
-        "45ybqd2Egw9NyJeCRYjMx4", // weston estate
-        "0nsIevK1SeDfZzDOi6Si75", // crush
-        "3BOBiTt7jIn9WLoxV3tLUv", // atlas in motion 
-        "7bqi6xDv1KrmM8cKN5Qo4x", // beep
-      ];
-
-        const randomTrack = tracks[Math.floor(Math.random() * tracks.length)];
-        const iframe = document.getElementById("spotify-embed");
-      const base = "https://open.spotify.com/embed/track/";
-      iframe.src = base + encodeURIComponent(randomTrack) + "?utm_source=generator";
+      const tracks = ["26ZX2JrAb8AFbr8FFfAsO7", "32NRHTXx7dWCBHaKtinsZ6", "2FWtCf6ZlSQ9Q6kSiMb3hq", "2GjDvj6jvA21pNRN9GfGah", "3DUe5irMKEjbsIoHxHnIYe", "1GIDMzcU9cvO5j7f1kuT4Z", "3FYuQY0fkDsOOIpcvgBLIo", "1w9B61OdLdnjzZIUYmy0bd", "45ybqd2Egw9NyJeCRYjMx4", "0nsIevK1SeDfZzDOi6Si75", "3BOBiTt7jIn9WLoxV3tLUv", "7bqi6xDv1KrmM8cKN5Qo4x"];
+      document.getElementById('spotify-embed').src = 'https://open.spotify.com/embed/track/' + tracks[Math.floor(Math.random() * tracks.length)] + '?utm_source=generator';
     })();
   </script>
+</body>
 </html>
