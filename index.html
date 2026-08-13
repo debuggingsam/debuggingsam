@@ -175,7 +175,30 @@
 
   <script>
     (function () {
-      const tracks = ["26ZX2JrAb8AFbr8FFfAsO7", "32NRHTXx7dWCBHaKtinsZ6", "2FWtCf6ZlSQ9Q6kSiMb3hq", "2GjDvj6jvA21pNRN9GfGah", "3DUe5irMKEjbsIoHxHnIYe", "1GIDMzcU9cvO5j7f1kuT4Z", "3FYuQY0fkDsOOIpcvgBLIo", "1w9B61OdLdnjzZIUYmy0bd", "45ybqd2Egw9NyJeCRYjMx4", "0nsIevK1SeDfZzDOi6Si75", "3BOBiTt7jIn9WLoxV3tLUv", "7bqi6xDv1KrmM8cKN5Qo4x"];
+      const tracks =
+      [
+      "26ZX2JrAb8AFbr8FFfAsO7",
+      "32NRHTXx7dWCBHaKtinsZ6",
+      "2FWtCf6ZlSQ9Q6kSiMb3hq",
+      "2GjDvj6jvA21pNRN9GfGah",
+      "3DUe5irMKEjbsIoHxHnIYe",
+      "1GIDMzcU9cvO5j7f1kuT4Z",
+      "3FYuQY0fkDsOOIpcvgBLIo",
+      "1w9B61OdLdnjzZIUYmy0bd",
+      "45ybqd2Egw9NyJeCRYjMx4",
+      "0nsIevK1SeDfZzDOi6Si75",
+      "3BOBiTt7jIn9WLoxV3tLUv",
+      "7bqi6xDv1KrmM8cKN5Qo4x",
+      "78pkhUlRzWOeiuH8XA4hAs", // gold
+      "4vjvx7Zxkb4AltGcZ0BBvI", // kyoto
+      "3kVCAHJ6NUmyjobxsTzB5O", // winding down
+      "7ARveOiD31w2Nq0n5FsSf8", // perfect places
+      "25Syi9wnfn6ZGAmiOBypPq", // motion sickness
+      "0UOG0zUn7t8m8QcxfzR7AH", // xmas, please dont call
+      "7tUN3RCNRDlLjmThcIORo9", // guts
+      ];
+
+
       document.getElementById('spotify-embed').src = 'https://open.spotify.com/embed/track/' + tracks[Math.floor(Math.random() * tracks.length)] + '?utm_source=generator';
 
       const detachedDialog = document.getElementById('detached-dialog');
